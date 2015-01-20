@@ -3,11 +3,11 @@
 
 #include <base/Logging.hpp>
 
-#define logDebug(FORMAT, ARGS...) LOG_DEBUG(FORMAT, ## ARGS)
-#define logInfo(FORMAT, ARGS...) LOG_INFO(FORMAT, ## ARGS)
-#define logWarn(FORMAT, ARGS...) LOG_WARN(FORMAT, ## ARGS)
-#define logError(FORMAT, ARGS...) LOG_ERROR(FORMAT, ## ARGS)
-#define logFatal(FORMAT, ARGS...) LOG_FATAL(FORMAT, ## ARGS)
-#define logInform(FORMAT, ARGS...) LOG_INFO(FORMAT, ## ARGS)
+#define logDebug(FORMAT, ARGS...) do { LOG_DEBUG(FORMAT, ## ARGS); } while(0)
+#define logInfo(FORMAT, ARGS...) do { LOG_INFO(FORMAT, ## ARGS); } while(0)
+#define logWarn(FORMAT, ARGS...) do { LOG_WARN(FORMAT, ## ARGS); } while(0)
+#define logError(FORMAT, ARGS...) do { LOG_ERROR(FORMAT, ## ARGS); } while(0)
+#define logFatal(FORMAT, ARGS...) do { LOG_FATAL(FORMAT, ## ARGS); } while(0)
+#define logInform(FORMAT, ARGS...) do { LOG_INFO(FORMAT, ## ARGS); } while(0)
 
 #endif
