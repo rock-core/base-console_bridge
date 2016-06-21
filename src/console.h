@@ -95,14 +95,14 @@ enum LogLevel
     with lower logging levels will not be recorded. */
 inline void setLogLevel(LogLevel level)
 {
-    logWarn("The rock implementation of console_bridge does not support setLogLevel()!");
+    CONSOLE_BRIDGE_logWarn("The rock implementation of console_bridge does not support setLogLevel()!");
 }
 
 /** \brief Retrieve the current level of logging data.  Messages
     with lower logging levels will not be recorded. */
 inline LogLevel getLogLevel(void)
 {
-    logWarn("The rock implementation of console_bridge does not support getLogLevel()!");
+    CONSOLE_BRIDGE_logWarn("The rock implementation of console_bridge does not support getLogLevel()!");
     return CONSOLE_BRIDGE_LOG_INFO;
 }
 
