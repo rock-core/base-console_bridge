@@ -1,7 +1,7 @@
 #ifndef ROCK_CONSOLE_BRIDGE_CONSOLE_H
 #define ROCK_CONSOLE_BRIDGE_CONSOLE_H
 
-#include <base/Logging.hpp>
+#include <base-logging/Logging.hpp>
 
 
 #ifdef __GNUC__
