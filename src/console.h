@@ -106,6 +106,9 @@ inline LogLevel getLogLevel(void)
     return CONSOLE_BRIDGE_LOG_INFO;
 }
 
+
+void log(const char *file, int line, LogLevel level, const char* m, ...);
+
 } // namespace console_bridge
 
 #endif
