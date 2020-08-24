@@ -1,8 +1,8 @@
-configure_file(console_bridge.pc.in ${CMAKE_CURRENT_BINARY_DIR}/console_bridge.pc @ONLY)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/console_bridge.pc
-    DESTINATION lib/pkgconfig)
-install(FILES console.h
-    DESTINATION include/console_bridge)
+rock_library(console_bridge
+    SOURCES console.cpp
+    HEADERS console.h
+    DEPS_PKGCONFIG base-logging
+)
     
 set(cmake_conf_version_file "console_bridgeConfig-version.cmake")
 # Use write_basic_package_version_file to generate a ConfigVersion file that
